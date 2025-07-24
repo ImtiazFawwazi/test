@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>String Modifier</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    textarea { width: 100%; height: 100px; }
+    button { margin-top: 1em; padding: 0.5em 1em; }
+    #output { margin-top: 1em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>String Modifier</h1>
+  <textarea id="inputText" placeholder="Enter your string here..."></textarea><br>
+  <button onclick="processString()">Modify String</button>
+  <div id="output"></div>
+
+  <script>
+    function processString() {
+      const input = document.getElementById("inputText").value;
+
+      // 🔧 Modify this function to match your procedure
+      const modified = input.toUpperCase().split('').reverse().join('');
+
+      document.getElementById("output").textContent = "Modified String: " + modified;
+    }
+  </script>
+</body>
+</html>
